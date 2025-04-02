@@ -1,0 +1,10 @@
+extends layout
+block content
+    div(style='display:flex; flex-direction:row;')
+        a(href="/", style='margin-right:10px;') Home
+    h1= "Node Test: " + title
+    hr
+    p The following test generated using node extensions written in C++:
+    br
+    h3 say.node test
+    code(style='padding:15px;border:1px solid #ddd;background:#f8f8f8;font-size:22px')= say

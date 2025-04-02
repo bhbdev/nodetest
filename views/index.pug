@@ -1,0 +1,22 @@
+extends layout
+block content
+    h1= title
+    hr
+    p The following tests were generated using node extensions written in C++:
+    br
+    h3 hello.node test
+    code(style='padding:15px;border:1px solid #ddd;background:#f8f8f8;font-size:22px')= hello
+    br
+    br
+    h3 hellosimple.node test
+    code(style='padding:15px;border:1px solid #ddd;background:#f8f8f8;font-size:22px')= hellosimple
+    br
+    br
+    h3 say.node test
+    code(style='padding:15px;border:1px solid #ddd;background:#f8f8f8;font-size:22px')= say
+    br
+    br
+    h3 say.node test with form
+    form(action="/say", method="post", style="display:inline;padding:15px;border:1px solid #ddd;background:#f8f8f8;font-size:22px")
+        input(type="text", name="str")
+        input(type="submit", value="Say")
